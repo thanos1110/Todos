@@ -4,13 +4,19 @@ import Left from './Components/Left';
 import Right from './Components/Right';
 import Footer from './Components/Footer';
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 function App() {
-  const [todos, setTodos] = useState([])
+  let initTodo;
+  if (localStorage.getItem === null) {
+    initTodo = []
+  } else {
+    initTodo = JSON.parse(localStorage.getItem('todos'));
+  }
   const onDelete = (todo) => {
     console.log("OnDelete Called of ", todo);
     setTodos(todos.filter((e) => {
       return e !== todo;
-    }))
+    }));
   }
   const addTodo = (title, desc) => {
     console.log(title, desc);
@@ -28,10 +34,15 @@ function App() {
     setTodos([...todos, myTodo]);
     console.log(myTodo);
   }
+  const [todos, setTodos] = useState(initTodo)
+  useEffect(() => {
+    localStorage.setItem("todos", JSON.stringify(todos));
+
+  }, [todos])
 
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1>HelloTodo</h1>
       <Header title='Todos' search={false} />
       <Left todos={todos} onDelete={onDelete} />
       <Right addTodo={addTodo} />

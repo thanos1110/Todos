@@ -7,6 +7,8 @@ function Right(props) {
         // alert('Submitted')
         e.preventDefault();
         props.addTodo(title, desc);
+        // setTitle('');//uncomment after words
+        // setDesc('');//uncomment after words
     }
     return (
         <div id='Right'>

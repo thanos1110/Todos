@@ -4,7 +4,7 @@ import Table from './Table'
 function Left(props) {
     return (
         <div id='Left'>
-            <h2>Output</h2>
+            <h2 style={{ color: 'yellow' }}>Output</h2>
             <div style={{ margin: '2%' }}>
                 <table >
 
@@ -17,7 +17,7 @@ function Left(props) {
                         </tr>
                     </thead>
                     <tbody>
-                        {props.todos.length === 0 ? <><h2>No Todos to Display</h2> </> :
+                        {props.todos.length === 0 ? <><h2 style={{ color: 'white' }}>No Todos to Display</h2> </> :
                             props.todos.map((todo) => {
                                 return <Table todo={todo} key={todo.sno} onDelete={props.onDelete} />
                             })
