@@ -1,0 +1,12 @@
+#Left {
+    margin-top: 0;
+    margin: 2%;
+    position: static;
+    float: left;
+    height: 375px;
+    width: 40%;
+    background-color: #023047;
+
+    border: 50px solid black;
+    overflow: auto;
+}

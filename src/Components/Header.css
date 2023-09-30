@@ -1,0 +1,41 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar */
+nav {
+    background-color: #333;
+    /* Background color */
+}
+
+/* Style the list items */
+ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 20px;
+}
+
+/* Style the list items and links */
+li {
+    display: inline;
+    /* Display items horizontally */
+    margin: 10px;
+    /* Add some space between items */
+}
+
+a {
+    text-decoration: none;
+    /* Remove underlines from links */
+    color: white;
+    /* Text color */
+    font-weight: bold;
+    /* Bold text */
+}
+
+/* Change link color on hover */
+a:hover {
+    color: #00bcd4;
+    /* Hover color */
+}

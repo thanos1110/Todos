@@ -1,0 +1,49 @@
+#Right {
+    margin-top: 0;
+    margin: 2%;
+    position: static;
+    float: right;
+    height: 375px;
+    width: 38%;
+    background-color: #EF476F;
+    border: 50px solid black;
+}
+
+
+
+/* Style the form */
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Style the form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style the form input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the form submit button */
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add some hover effect to the submit button */
+input[type="submit"]:hover {
+    background-color: #555;
+}
